@@ -2,10 +2,16 @@
 
 html {
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+#main-content {
+  position: relative;
+  top: 60px;
 }
 
 .media-container {
-  width: 45%;
+  display: block;
   height: auto;
   overflow: hidden;
 }
@@ -18,6 +24,8 @@ nav {
   display: flex;
   align-items: center;
   position: fixed;
+  z-index: 5;
+  background-color: white;
 }
 
 nav img {
@@ -66,14 +74,13 @@ nav .nav-items span:nth-child(2n) {
 
 #banner {
   display: flex;
-  position: absolute;
-  top: 10%;
   width: 100%;
   height: auto;
   background-color: #D2D7D9;
 }
 
 #banner .media-container {
+  width: 45%;
   padding: 2.5% 2%;
 }
 
@@ -100,17 +107,71 @@ nav .nav-items span:nth-child(2n) {
 }
 
 .splash h4 {
-  font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
+  color: #383D40;
   padding: 8% 0;
   line-height: 1.1;
 }
 
 .splash-button {
-  font-family: 'Lato', sans-serif;
   color: white;
   text-align: center;
   width: 70%;
   background-color: #383D40;
   padding: 3% 0;
+}
+
+/* Information section styles */
+
+#more-info {
+  display: flex;
+  margin-top: 2.5%;
+  margin-left: 2%;
+}
+
+#more-info .media-container {
+  width: 70%;
+}
+
+#more-info .media-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-quote {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.quote-content {
+  width: 70%;
+}
+
+.info-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-image {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info-box {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.box-content {
+  padding-left: 0.5rem;
+  width: 80%;
 }
