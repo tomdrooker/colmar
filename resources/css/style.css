@@ -143,29 +143,67 @@ nav .nav-items span:nth-child(2n) {
 .info-links {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-left: 3.5rem;
 }
 
-.info-image {
+.info-image, .first-info-image {
   width: 35%;
   height: auto;
   overflow: hidden;
 }
 
-.info-image img {
+.info-image img, .first-info-image img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+.first-info-image {
+  padding: 0 0 1rem 1rem;
+}
+
+.info-image {
+  padding: 1rem 0 1rem 1rem;
+}
+
 .info-box {
-  width: 60%;
+  width: 80%;
   display: flex;
   align-items: center;
+}
+
+.first-info-box {
+  padding: 0 0 1rem 1rem
 }
 
 .box-content {
   padding-left: 0.5rem;
   width: 80%;
+}
+
+.quote-content h2 {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem 0 1.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.quote-content p {
+  padding-bottom: 1.5rem;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+.quote-content figcaption {
+  padding-bottom: 2rem;
+}
+
+.box-content p {
+  padding: 0.5rem 0;
+}
+
+.box-content h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
