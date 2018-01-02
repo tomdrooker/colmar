@@ -119,14 +119,18 @@ nav .nav-items span:nth-child(2n) {
   width: 70%;
   background-color: #383D40;
   padding: 3% 0;
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+
+.splash-button:hover {
+  background-color: white;
+  color: #383D40;
 }
 
 /* Information section styles */
 
 #more-info {
   display: flex;
-  margin-top: 2.5%;
-  margin-left: 2%;
 }
 
 #more-info .media-container img {
@@ -138,12 +142,15 @@ nav .nav-items span:nth-child(2n) {
   width: 54%;
   display: flex;
   flex-direction: column;
+  margin-top: 2.5%;
+  margin-left: 2%;
 }
 
 .info-links {
   display: flex;
   flex-direction: column;
   padding-left: 3.5rem;
+  padding-top: 1.1rem;
 }
 
 .info-image, .first-info-image {
@@ -159,7 +166,7 @@ nav .nav-items span:nth-child(2n) {
 }
 
 .first-info-image {
-  padding: 0 0 1rem 1rem;
+  padding: 1rem 0 1rem 1rem;
 }
 
 .info-image {
@@ -170,10 +177,7 @@ nav .nav-items span:nth-child(2n) {
   width: 80%;
   display: flex;
   align-items: center;
-}
-
-.first-info-box {
-  padding: 0 0 1rem 1rem
+  transition: background-color 200ms ease-in;
 }
 
 .box-content {
@@ -184,7 +188,7 @@ nav .nav-items span:nth-child(2n) {
 .quote-content h2 {
   font-family: 'Open Sans', sans-serif;
   padding: 2rem 0 1.5rem 0;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: bold;
 }
 
@@ -206,4 +210,73 @@ nav .nav-items span:nth-child(2n) {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.info-box:hover {
+  background-color: #D2D7D9;
+}
+
+/* Gallery styles */
+
+#gallery {
+  background-color: #D2D7D9;
+}
+
+#gallery h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2rem;
+  color: #383D40;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.gallery-box {
+  width: 25%;
+  padding-bottom: 2rem;
+}
+
+.second-box {
+  margin: 0 2rem;
+}
+
+.gallery-box-image {
+  overflow: hidden;
+}
+
+.gallery-box-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-box-text {
+  background-color: white;
+  padding-left: 1rem;
+}
+
+.gallery-box-text h3 {
+  color: #383D40;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.gallery-box-text h4 {
+  color: #757982;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+.gallery-box-text p {
+  color: #757982;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
 }
