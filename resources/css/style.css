@@ -266,17 +266,33 @@ nav .nav-items span:nth-child(2n) {
   color: #383D40;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .gallery-box-text h4 {
   color: #757982;
   text-transform: uppercase;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
 }
 
 .gallery-box-text p {
   color: #757982;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+/* Second more information section styles */
+
+.thesis {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2rem;
+  color: #383D40;
+}
+
+#more-info .media-container video {
+  max-width: 100%;
+  height: auto;
 }
