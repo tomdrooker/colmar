@@ -296,3 +296,20 @@ nav .nav-items span:nth-child(2n) {
   max-width: 100%;
   height: auto;
 }
+
+/* Footer styles */
+
+footer {
+  display: flex;
+  font-size: 0.85rem;
+  padding: 1rem 0 2rem 1.5rem;
+  border-top: 1px solid #D2D7D9;
+}
+
+footer p {
+  flex-grow: 1;
+}
+
+footer span {
+  padding-right: 2rem;
+}
