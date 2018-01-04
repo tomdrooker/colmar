@@ -105,7 +105,7 @@ html {
 
 #banner .media-container {
   width: 45%;
-  padding: 2rem 1.75rem;
+  padding: 2rem 0rem 2rem 1.75rem;
 }
 
 #banner .media-container img {
@@ -195,6 +195,12 @@ html {
 
 #more-info {
   display: flex;
+  width: 100%;
+}
+
+#more-info .media-container {
+  width: 100%;
+  padding: 2rem 1.75rem;
 }
 
 #more-info .media-container img {
@@ -206,15 +212,13 @@ html {
   width: 54%;
   display: flex;
   flex-direction: column;
-  margin-top: 2.5%;
-  margin-left: 2%;
 }
 
 .info-links {
   display: flex;
   flex-direction: column;
-  padding-left: 3.5rem;
   padding-top: 1.1rem;
+  margin-left: 5rem;
 }
 
 .info-image, .first-info-image {
