@@ -237,6 +237,14 @@ html {
   padding: 1rem 0 1rem 1rem;
 }
 
+.mobile-info-image {
+  display: none;
+}
+
+.first-mobile-info-image {
+  display: none;
+}
+
 .info-box {
   width: 80%;
   display: flex;
@@ -289,20 +297,31 @@ html {
 .info-links {
   padding-left: 0;
   padding-top: 0;
+  height: 100%;
 }
 
 .info-image, .first-info-image {
+  display: none;
+}
+
+.mobile-info-image, .first-mobile-info-image {
+  display: block;
   width: 80%;
   height: auto;
-  overflow: hidden;
-  border: 1px solid black;
   margin: 0 auto;
 }
 
-.info-image img, .first-info-image img {
-  width: 100%;
-  height: 60%;
-  display: block;
+.mobile-info-image img, .first-mobile-info-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.first-mobile-info-image {
+  margin-top: 1rem;
+}
+
+.mobile-info-image {
+  margin-top: 1rem;
 }
 
 .info-box {
@@ -320,8 +339,12 @@ html {
   padding: 0 0;
 }
 
-#more-info {
-  align-items: ;
+.box-content {
+  margin-left: 16px;
+}
+
+.box-content h3 {
+  padding-top: 0.5rem;
 }
 }
 
@@ -388,6 +411,12 @@ html {
   color: #757982;
   padding-bottom: 2rem;
   padding-right: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #gallery {
+    margin-top: 1rem;
+  }
 }
 
 /* Second more information section styles */
