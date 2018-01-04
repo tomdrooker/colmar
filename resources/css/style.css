@@ -16,9 +16,15 @@ html {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 480px) {
+  #main-content {
+    top: 0;
+  }
+}
+
 /* Nav styles */
 
-nav {
+.desktop {
   width: 100%;
   height: 4rem;
   display: flex;
@@ -28,20 +34,20 @@ nav {
   background-color: white;
 }
 
-nav img {
+.desktop img {
   padding: 0 1rem 0 1.5rem;
   height: 75%;
   width: auto;
 }
 
-nav .logo-light {
+.desktop .logo-light {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
   flex-grow: 1;
 }
 
-nav .logo-heavy {
+.desktop .logo-heavy {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -49,25 +55,42 @@ nav .logo-heavy {
   color: #383D40;
 }
 
-nav .nav-items {
+.desktop .nav-items {
   font-family: 'Lato', sans-serif;
 }
 
-nav a:link {
+.desktop a:link {
   color: #000000;
   text-decoration: none;
 }
 
-nav a:visited {
+.desktop a:visited {
   color: #000000;
 }
 
-nav .nav-items span:nth-child(3n) {
+.desktop .nav-items span:nth-child(3n) {
   padding-right: 1.5rem;
 }
 
-nav .nav-items span:nth-child(2n) {
+.desktop .nav-items span:nth-child(2n) {
   padding: 0 1rem;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
 }
 
 /* Banner styles */
@@ -125,6 +148,38 @@ nav .nav-items span:nth-child(2n) {
 .splash-button:hover {
   background-color: white;
   color: #383D40;
+}
+
+@media only screen and (max-width: 480px) {
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner .media-container {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  #banner .media-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .splash {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 1rem 1rem;
+  }
+
+  .splash h4 {
+    font-size: 1.25rem;
+    color: #383D40;
+    padding: 2rem 0 1.75rem 0;
+    line-height: 1.1;
+  }
 }
 
 /* Information section styles */
