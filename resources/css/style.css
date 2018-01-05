@@ -35,6 +35,12 @@ html {
   background-color: white;
 }
 
+@media only screen and (max-width: 620px) {
+  .desktop .nav-items {
+    padding-left: 2rem;
+  }
+}
+
 .desktop img {
   padding: 0 1rem 0 1.5rem;
   height: 75%;
@@ -54,10 +60,6 @@ html {
   text-transform: uppercase;
   font-size: 2rem;
   color: #383D40;
-}
-
-.desktop .nav-items {
-  font-family: 'Lato', sans-serif;
 }
 
 .desktop a:link {
@@ -137,6 +139,16 @@ html {
   line-height: 1.1;
 }
 
+@media only screen and (max-width: 620px) {
+  .splash h4 {
+    display: none;
+  }
+
+  .splash h1 {
+    padding-bottom: 1rem;
+  }
+}
+
 .splash-button {
   color: white;
   text-align: center;
@@ -196,6 +208,7 @@ html {
 #more-info {
   display: flex;
   width: 100%;
+  height: auto;
 }
 
 #more-info .media-container {
@@ -225,6 +238,21 @@ html {
   width: 35%;
   height: auto;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 620px) {
+.info-image, .first-info-image {
+  display: none;
+}
+
+.info-quote {
+  width: 100%;
+}
+
+.info-links {
+  margin-left: 6rem;
+  justify-content: center;
+}
 }
 
 .info-image img, .first-info-image img {
@@ -267,7 +295,7 @@ html {
 
 .quote-content h2 {
   font-family: 'Open Sans', sans-serif;
-  padding: 2rem 0 1.5rem 0;
+  padding: 0 0 1.5rem 0;
   font-size: 2.1rem;
   font-weight: bold;
 }
