@@ -401,10 +401,12 @@ html {
 }
 
 .gallery-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding-top: 2rem;
+}
+
+.first-row, .second-row {
+  display: flex;
+  justify-content: center;
 }
 
 .gallery-box {
