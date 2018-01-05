@@ -401,12 +401,10 @@ html {
 }
 
 .gallery-content {
-  padding-top: 2rem;
-}
-
-.first-row, .second-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
 }
 
 .gallery-box {
@@ -456,7 +454,7 @@ html {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 620px) {
   #gallery {
     background-color: white;
   }
@@ -485,6 +483,20 @@ html {
 
   .mobile-gallery-button a:visited {
     color: #000000;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .gallery-box-text h4 {
+    display: none;
+  }
+
+  .gallery-box-text p {
+    display: none;
+  }
+
+  .gallery-box-text h3 {
+    padding-bottom: 2rem;
   }
 }
 
@@ -521,6 +533,16 @@ html {
 
 .thesis-info-image {
   padding: 1rem 0 1rem 1rem;
+}
+
+@media only screen and (max-width: 620px) {
+  .thesis-info-image, .thesis-first-info-image {
+    display: none;
+  }
+
+  .thesis-info-links {
+    justify-content: center;
+  }
 }
 
 .thesis {
