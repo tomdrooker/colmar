@@ -365,7 +365,6 @@ html {
   flex-direction: column;
   height: 20%;
   width: 100%;
-
 }
 
 .first-info-image {
@@ -587,7 +586,6 @@ html {
   .video-info-quote .quote-content {
     display: none;
   }
-
 }
 
 /* Footer styles */
